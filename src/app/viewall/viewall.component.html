@@ -1,0 +1,40 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">State</th>
+                    <th scope="col">RuralHospital</th>
+                    <th scope="col">RuralBeds</th>
+                    <th scope="col">UrbanHospitals</th>
+                    <th scope="col">UrbanBeds</th>
+                    <th scope="col">TotalHospitals</th>
+                    <th scope="col">TotalBeds</th>
+                    <th scope="col">AsOn</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let i of corona">
+                    <th scope="row">{{i.state}}</th>
+                    <td>{{i.ruralHospitals}}</td>
+                    <td>{{i.ruralBeds}}/td>
+                    <td>{{i.urbanHospitals}}</td>
+                    <td>{{i.urbanBeds}}</td>
+                    <td>{{i.totalHospitals}}</td>
+                    <td>{{i.totalBeds}}</td>
+                    <td>{{i.asOn}}</td>
+                  </tr>
+                 
+                </tbody>
+              </table>
+            
+
+
+        </div>
+    </div>
+</div>
+
